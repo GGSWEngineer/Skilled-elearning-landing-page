@@ -1,0 +1,394 @@
+:root {
+  --primary-color: #13183f;
+  --secondary-color: #83869a;
+}
+
+/* Reset some default styles for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set some default styles for the body of your webpage */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  width: 100%;
+  height: auto;
+}
+
+/* Add your own custom styles below */
+
+#navbar {
+  height: 7rem;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2,
+header button {
+  margin: 1rem;
+}
+
+header button {
+  background-color: var(--primary-color);
+  width: 8.75rem;
+  height: 3rem;
+  border-radius: 1.75rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.75rem;
+  border: none;
+  min-width: 140px;
+  z-index: 1000;
+}
+
+header button:hover {
+  background-color: #666ca3;
+}
+
+header h2 {
+  width: 100%;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 1.4rem 1rem;
+}
+
+.description {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem; /* 162.5% */
+  margin: 1rem;
+  margin-top: -0.8rem;
+  max-width: 398px;
+}
+
+.colorful-btn {
+  width: 10.4375rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 1.96875rem;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  margin: 1rem;
+  color: var(--FFFFFF, #fff);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 162.5% */
+  border: none;
+}
+
+.colorful-btn:hover {
+  background: var(
+    --Gradient-1-Hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 20.4375rem;
+  height: 18.8125rem;
+  flex-shrink: 0;
+  margin: 1.5rem;
+}
+
+.colorful-div {
+  width: 21.4375rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  margin: 0 auto;
+}
+
+.colorful-div p {
+  color: var(--FFFFFF, #fff);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem; /* 133.333% */
+  padding: 1.5rem 1.75rem 2rem;
+}
+
+.rectangle {
+  width: 21.25rem;
+  height: 16.1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 0.9375rem;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.rectangle svg {
+  width: 80px;
+  height: 80px;
+  padding-left: 1.75rem;
+}
+
+.rectangle h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-left: 1.75rem;
+  margin: 1rem 0;
+}
+
+.rectangle p {
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.625rem; /* 162.5% */
+  padding-left: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.rectangle h4 {
+  color: #f74780;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+  margin-left: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.rectangle a {
+  text-decoration: none;
+  color: #f74780;
+}
+
+.rectangle a:hover {
+  color: var(--FFA7C3, #ffa7c3);
+}
+
+.margin-half {
+  margin-bottom: 0.5rem;
+}
+
+.margin-three-point-five {
+  margin-bottom: 3.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7.5rem;
+  align-items: center;
+}
+
+footer h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+footer button {
+  width: 8.75rem;
+  height: 3rem;
+  border-radius: 1.75rem;
+  background: var(
+    --Gradient-2,
+    linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)
+  );
+  margin: 1rem;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  line-height: 1.75rem; /* 175% */
+}
+
+footer button:hover {
+  background: var(
+    --Gradient-2-Hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%)
+  );
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* Your CSS styles for screens between 380px and 768px wide */
+  header h2,
+  header button {
+    margin: 1.5rem 2.5rem;
+  }
+
+  main {
+    width: 64%;
+  }
+
+  main h1,
+  main .description {
+    margin: 2.5rem;
+  }
+
+  main .colorful-btn {
+    margin-top: -1rem;
+    margin-left: 2.5rem;
+  }
+
+  .rectangle-container {
+    width: 100%;
+    margin: -25rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    max-width: 780px;
+  }
+
+  .rectangle h4 {
+    margin-left: 2rem;
+  }
+
+  .rectangle svg {
+    position: relative;
+    bottom: 18px;
+    left: -12px;
+  }
+
+  .colorful-div {
+    width: 21.25rem;
+    height: 16.1875rem;
+    margin: 1rem;
+  }
+
+  img {
+    width: 640px;
+    height: 640px;
+    position: relative;
+    bottom: 530px;
+    left: 300px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* CSS rules for screens with a width of 1024px and above */
+  header h2 {
+    margin-top: 1.81rem;
+    margin-left: 10.31rem;
+    /* margin-bottom: 11.1rem; */
+  }
+
+  header button {
+    margin-right: 10.31rem;
+    margin-top: 1.5rem;
+  }
+
+  main h1,
+  main .description,
+  main .colorful-btn {
+    width: 100%;
+  }
+
+  .description,
+  main h1 {
+    max-width: 408px;
+  }
+
+  .colorful-btn {
+    max-width: 167px;
+  }
+
+  img {
+    width: 992px;
+    height: 937px;
+    position: relative;
+    bottom: 770px;
+    left: 520px;
+    overflow: hidden;
+  }
+
+  main {
+    margin-top: 11.5rem;
+    margin-left: 10.31rem;
+    max-width: 475px;
+  }
+
+  .colorful-div {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+
+  .colorful-div p {
+    padding: 4rem 2rem 8.5rem 2rem;
+  }
+
+  .rectangle-container {
+    width: 100%;
+    margin: -40rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    max-width: 1400px;
+    margin-bottom: 8.75rem;
+  }
+
+  .rectangle svg {
+    position: relative;
+    bottom: 20px;
+    left: -12px;
+  }
+
+  footer h2 {
+    margin-left: 10.31rem;
+  }
+
+  footer button {
+    margin-right: 10.31rem;
+  }
+}
